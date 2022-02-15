@@ -1,0 +1,32 @@
+BDD - Behaviour Driven Development
+Feature File - Auto Quote Feature
+- someFeature.feature
+- Can have multiple scenarios
+- Can have multiple scenario outline
+
+Gerkins Syntax - Feature, Scenario/Scenario Outline, Given, When, Then, And, Example, @tags 
+
+Given Pre-condition
+When Action/Trigger
+Then Assertion
+
+@regression @smoke @hfa-3014
+Scenario : User with good driving history can create a auto quote
+Given user navigate to thehartford page
+When user fill all the steps for auto qoute
+Then create a auto quote
+
+@smoke @hfa-3014
+Scenario : User with good driving history can create a auto quote
+Given user navigate to thehartford page
+And user click auto quote button
+When user fill the first name
+And user fill the last name
+And user fill the zipcode
+And user fill the address
+Then create a auto quote
+And there will be a premium
+
+- BDD is used to related everybody (stakeholders, business users) together so 
+	they also can relate to the project and share therei valiable feedback if required
+- we use tags to relate the tickets where tester and developer work together
