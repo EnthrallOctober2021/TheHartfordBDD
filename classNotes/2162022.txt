@@ -1,0 +1,26 @@
+Interview Questions:
+1. What is BDD?
+2. What is the difference between scenario and sceanrio outline?
+- Main diffrence is in scenario outline we use Examples keyword, where we can pass multiple sets of test data.
+	scenario outline is basically used for parameterized testing.
+	scenario is hard-coded steps or passing data from step defination
+3. What is a feature file?
+- Feature file is ends with .feature file extension. It can have multiple scenario or scenario outline
+	which written in Gerkins Syntax, such as Given When Then And
+4. What is a step definition?
+- Step definition is the actual code implemented behind the feature file
+5. What is cucumberOptions? Can you define your TestRunner class? ********
+- @RunWith(Cucumber.class)
+- @CucumberOptions(feature, glue, tags, plug-ins)
+6. What is glue in cucumber? ********
+- glue inside cucumberOptions define the location of the step definitions
+7. What is monochrome inside cucumberOptions?
+- this is an optional tag, which is by default false. If it is true, then the console output will look tidy.
+* dryRun = true will not execute test. it just make sure all the steps in feature files are defined in step definitions
+	by default dryRun = false
+* plugins - reporting purpose. We can use json report, xml report and html report
+* Background - steps in background will always run before test
+	- And common steps for all scenarios/scenario outline
+* Hooks - @Before @After from cucumber 
+
+

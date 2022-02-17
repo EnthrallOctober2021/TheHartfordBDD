@@ -4,11 +4,11 @@ Feature File - Auto Quote Feature
 - Can have multiple scenarios
 - Can have multiple scenario outline
 
-Gerkins Syntax - Feature, Scenario/Scenario Outline, Given, When, Then, And, Example, @tags 
+Gerkins Syntax - Feature, Scenario/Scenario Outline, Given, When, Then, And, Example, @tags , *
 
 Given Pre-condition
 When Action/Trigger
-Then Assertion
+Then Assertion/Validation
 
 @regression @smoke @hfa-3014
 Scenario : User with good driving history can create a auto quote
@@ -17,16 +17,22 @@ When user fill all the steps for auto qoute
 Then create a auto quote
 
 @smoke @hfa-3014
-Scenario : User with good driving history can create a auto quote
+Scenario Outline : User with good driving history can create a auto quote
 Given user navigate to thehartford page
 And user click auto quote button
-When user fill the first name
-And user fill the last name
-And user fill the zipcode
-And user fill the address
+When user fill the <first_name>
+And user fill the <last_name>
+And user fill the <zipcode>
+And user fill the <address>
 Then create a auto quote
 And there will be a premium
+Examples:
+|first_name|last_name|zipcode|address|
+|john		|Doe	|11422|some address|
+|david		|Doe	|11422|some address|
+|jen		|Doe	|11422|some address|
+
 
 - BDD is used to related everybody (stakeholders, business users) together so 
-	they also can relate to the project and share therei valiable feedback if required
+	they also can relate to the project and share there valiable feedback if required
 - we use tags to relate the tickets where tester and developer work together

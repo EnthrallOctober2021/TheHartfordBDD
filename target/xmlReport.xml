@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.867">
+<testcase classname="Auto Quote validation" name="Quote for a new Car Insurance" time="11.663">
+<system-out><![CDATA[Given user is in the The Hartford page......................................passed
+When user move cursor onto Auto tab.........................................passed
+Then title 'title' menu opened..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
