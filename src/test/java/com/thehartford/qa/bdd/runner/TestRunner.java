@@ -5,7 +5,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(	tags = "@auto",
+@CucumberOptions(	tags = "@tageBased1",
 					features = {"features"},
 					glue = {"classpath:/com/thehartford/qa/bdd/hooks",
 							"classpath:/com/thehartford/qa/bdd/commonSteps",

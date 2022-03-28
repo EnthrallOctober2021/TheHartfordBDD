@@ -15,6 +15,6 @@ public class HookClass {
 	
 	@After
 	public void tearUp() {
-		//BaseClass.driver.quit();
+		BaseClass.driver.quit();
 	}
 }
