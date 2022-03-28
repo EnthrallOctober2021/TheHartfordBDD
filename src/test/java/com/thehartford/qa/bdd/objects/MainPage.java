@@ -13,6 +13,10 @@ public class MainPage {
 	
 	@FindBy(xpath = "//ul[@role='menubar']/descendant::span[contains(.,'Auto')]")
 	public WebElement autoTab;
+	@FindBy(xpath = "//ul[@role='menubar']/descendant::span[contains(.,'Home')]")
+	public WebElement homeTab;
 	@FindBy(xpath = "//div[@class='nav-sub-section-heading' and contains(.,'AUTO INSURANCE SOLUTIONS')]")
 	public WebElement autoTabGroup1;
+	@FindBy(xpath = "//div[@data-dl-act='Home']/descendant::a[@title='Homeowners Insurance']")
+	public WebElement homeownersInsurance;
 }
